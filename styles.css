@@ -6,6 +6,12 @@ body {
     overflow: hidden;
 }
 
+body {
+    cursor: none;
+}
+
+
+
 .container {
     display: flex;
     flex-direction: column;
