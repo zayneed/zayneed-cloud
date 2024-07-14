@@ -3,70 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio von Zayneed</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            background-color: #f4f4f4;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 10px 0;
-            text-align: center;
-        }
-        .container {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 0 20px;
-        }
-        .project {
-            background-color: #fff;
-            padding: 20px;
-            margin-bottom: 20px;
-            border-radius: 5px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-        .project h2 {
-            color: #333;
-        }
-        .project p {
-            color: #666;
-        }
-        footer {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 10px 0;
-            position: absolute;
-            bottom: 0;
-            width: 100%;
-        }
-    </style>
+    <title>Portfolio - Zayneed</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Portfolio von Zayneed</h1>
-        <p>Webentwickler</p>
-    </header>
-    <div class="container">
-        <section class="project">
-            <h2>Projekt 1: Beispielprojekt</h2>
-            <p>Beschreibung des Projekts.</p>
-            <p><strong>Technologien:</strong> HTML, CSS, JavaScript</p>
-        </section>
-        <section class="project">
-            <h2>Projekt 2: Anderes Projekt</h2>
-            <p>Beschreibung des Projekts.</p>
-            <p><strong>Technologien:</strong> HTML, CSS, PHP, MySQL</p>
-        </section>
-        <!-- Weitere Projekte können hier hinzugefügt werden -->
+    <div class="cursor">
+        <div class="cursor-dot"></div>
     </div>
-    <footer>
-        <p>&copy; 2024 Zayneed. Alle Rechte vorbehalten.</p>
-    </footer>
+    <div class="container">
+        <div class="animated-text">
+            <span id="typing-text"></span><span class="blinking-cursor">|</span>
+        </div>
+        <div class="projects">
+            <div class="project">Projekt 1</div>
+            <div class="project">Projekt 2</div>
+            <div class="project">Projekt 3</div>
+            <div class="project">Projekt 4</div>
+        </div>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
