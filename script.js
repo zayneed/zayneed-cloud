@@ -31,10 +31,24 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     setTimeout(type, 1000);
-});
 
-document.addEventListener('mousemove', function(e) {
     const cursor = document.querySelector('.cursor');
-    cursor.style.left = e.clientX + 'px';
-    cursor.style.top = e.clientY + 'px';
+    document.addEventListener('mousemove', function(e) {
+        cursor.style.left = e.clientX + 'px';
+        cursor.style.top = e.clientY + 'px';
+    });
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.5 }); // Trigger animation when 50% of the element is visible
+
+    const projects = document.querySelectorAll('.project');
+    projects.forEach(project => {
+        observer.observe(project);
+    });
 });

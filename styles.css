@@ -3,13 +3,7 @@ body {
     margin: 0;
     font-family: Arial, sans-serif;
     color: white;
-    overflow: hidden;
 }
-
-body {
-    cursor: none;
-}
-
 
 
 .container {
@@ -55,31 +49,18 @@ body {
 }
 
 .project {
-    background-color: #171c28;
+    background-color: #181f38;
+    color: #b9a450; /* Farbton für den Beschreibungstext */
+    font-size: 1.2rem; /* Beispiel: Schriftgröße anpassen */
     margin: 0 10px;
     padding: 20px;
     min-width: 200px;
     flex: 0 0 auto;
     border-radius: 10px;
+    position: relative; /* Position für das Bild festlegen */
 }
 
-.cursor {
-    width: 20px;
-    height: 20px;
-    border: 2px solid white;
-    border-radius: 50%;
-    position: absolute;
-    transform: translate(-50%, -50%);
-    pointer-events: none;
-    transition: transform 20.0s ease-out; /* Langsame Animation */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 
-.cursor-dot {
-    width: 5px;
-    height: 5px;
-    background-color: rgba(255, 255, 255, 0.801);
-    border-radius: 50%;
+.project.visible {
+    opacity: 1;
 }
