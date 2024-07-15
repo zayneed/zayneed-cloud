@@ -7,6 +7,66 @@ body {
 }
 
 
+
+
+
+
+#about-me {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: transparent; /* Unsichtbarer Hintergrund */
+    text-align: center;
+}
+
+#about-me.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#about-me:hover {
+    transform: scale(1.1); /* Vergrößerung des gesamten Textes beim Hover */
+    transition: transform 0.5s ease-in-out; /* Übergang für Vergrößerung */
+}
+
+.about-me-title {
+    opacity: 0;
+    animation: slideInLeft 1s forwards; /* Animation beim Einfliegen von links */
+}
+
+@keyframes slideInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.about-me-text {
+    font-size: 2.1em; /* Größere Schriftgröße für den Text */
+    line-height: 1.6; /* Zeilenhöhe für bessere Lesbarkeit */
+}
+
+.highlight {
+    transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out, transform 0.5s ease-in-out;
+    display: inline-block;
+}
+
+#about-me:hover .highlight {
+    background-color: #332C3C;
+    color: #CBACF9;
+    transform: scale(1.4); /* Größere Vergrößerung der markierten Wörter beim Hovern */
+    padding: 2px 5px;
+    border-radius: 4px;
+}
+
+
+
 .container {
     display: flex;
     flex-direction: column;
@@ -25,10 +85,10 @@ body {
     border-right: 2px solid transparent;
     letter-spacing: 0.1em;
     background: linear-gradient(90deg, #239BEC, #2565EB, #239BEC);
-    -webkit-background-clip: text;
+    -webkit-background-clip: text; /* For WebKit browsers */
+    background-clip: text; /* For standard browsers */
     -webkit-text-fill-color: transparent;
 }
-
 .blinking-cursor {
     font-weight: bold;
     font-size: 4rem;
