@@ -3,13 +3,8 @@ body {
     margin: 0;
     font-family: Arial, sans-serif;
     color: white;
-    overflow-x: hidden; /* Verhindert horizontales Scrollen */
+    overflow-x: hidden; /* Prevents horizontal scrolling */
 }
-
-
-
-
-
 
 #about-me {
     opacity: 0;
@@ -17,7 +12,7 @@ body {
     transition: opacity 1s ease-out, transform 1s ease-out;
     padding: 20px;
     border-radius: 8px;
-    background-color: transparent; /* Unsichtbarer Hintergrund */
+    background-color: transparent; /* Transparent background */
     text-align: center;
 }
 
@@ -27,13 +22,13 @@ body {
 }
 
 #about-me:hover {
-    transform: scale(1.1); /* Vergrößerung des gesamten Textes beim Hover */
-    transition: transform 0.5s ease-in-out; /* Übergang für Vergrößerung */
+    transform: scale(1.01); /* Scale entire section on hover */
+    transition: transform 0.5s ease-in-out; /* Smooth transition */
 }
 
 .about-me-title {
     opacity: 0;
-    animation: slideInLeft 1s forwards; /* Animation beim Einfliegen von links */
+    animation: slideInLeft 1s forwards; /* Animation to slide in from the left */
 }
 
 @keyframes slideInLeft {
@@ -48,24 +43,18 @@ body {
 }
 
 .about-me-text {
-    font-size: 2.1em; /* Größere Schriftgröße für den Text */
-    line-height: 1.6; /* Zeilenhöhe für bessere Lesbarkeit */
+    font-size: 2.1em; /* Larger font size for text */
+    line-height: 1.6; /* Line height for better readability */
 }
 
 .highlight {
-    transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out, transform 0.5s ease-in-out;
+    background: linear-gradient(90deg, #239BEC, #2565EB, #239BEC);
+    color: #fff; /* Text color for highlight */
+    padding: 0 5px; /* Padding for highlight */
+    border-radius: 3px; /* Border radius for rounded corners */
+    transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out; /* Smooth transition for highlight */
     display: inline-block;
 }
-
-#about-me:hover .highlight {
-    background-color: #332C3C;
-    color: #CBACF9;
-    transform: scale(1.4); /* Größere Vergrößerung der markierten Wörter beim Hovern */
-    padding: 2px 5px;
-    border-radius: 4px;
-}
-
-
 
 .container {
     display: flex;
@@ -89,6 +78,7 @@ body {
     background-clip: text; /* For standard browsers */
     -webkit-text-fill-color: transparent;
 }
+
 .blinking-cursor {
     font-weight: bold;
     font-size: 4rem;
@@ -105,31 +95,30 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: visible; /* Zeige Überlauf-Inhalte */
+    overflow: visible; /* Show overflow content */
     width: 100%;
-    padding: 20px; /* Füge Puffer hinzu, damit vergrößerte Kästen sichtbar bleiben */
+    padding: 20px; /* Add padding to make enlarged boxes visible */
 }
 
 .project {
     background-color: #181f38;
-    color: #b9a450; /* Farbton für den Beschreibungstext */
-    font-size: 1.2rem; /* Beispiel: Schriftgröße anpassen */
+    color: #b9a450; /* Color tone for description text */
+    font-size: 1.2rem; /* Example: Adjust font size */
     margin: 0 10px;
     padding: 20px;
     min-width: 200px;
     flex: 0 0 auto;
     border-radius: 10px;
-    position: relative; /* Position für das Bild festlegen */
-    border: 1px solid transparent; /* Optional: Border für bessere Kontrolle */
-    box-shadow: 0 0 10px 2px rgba(185, 164, 80, 0.8); /* Leuchtender Rand */
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Übergangseffekt */
+    position: relative; /* Set position for the image */
+    border: 1px solid transparent; /* Optional: Border for better control */
+    box-shadow: 0 0 10px 2px rgba(185, 164, 80, 0.8); /* Glowing edge */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Transition effect */
 }
 
 .project:hover {
-    transform: scale(1.1); /* Vergrößerung bei Hover */
-    box-shadow: 0 0 20px 5px rgba(185, 164, 80, 1); /* Intensiverer leuchtender Rand bei Hover */
+    transform: scale(1.1); /* Enlarge on hover */
+    box-shadow: 0 0 20px 5px rgba(185, 164, 80, 1); /* More intense glowing edge on hover */
 }
-
 
 button {
     margin: 12px;
@@ -147,20 +136,14 @@ button {
     font-size: 16px;
     color: rgb(161, 161, 161);
     transition: 500ms;
-  }
-  
-  button:hover {
+}
+
+button:hover {
     box-shadow: -5px -5px 15px #444, 5px 5px 15px #222, inset 5px 5px 10px #222,
       inset -5px -5px 10px #444;
     color: #d6d6d6;
     transition: 500ms;
-  }
-  
-
-
-
-
-
+}
 
 .project.visible {
     opacity: 1;

@@ -1,3 +1,5 @@
+
+
 document.addEventListener('DOMContentLoaded', function () {
     const typingText = document.getElementById('typing-text');
     const text = "Hi, I'm Zayneed";
@@ -82,3 +84,5 @@ document.addEventListener("DOMContentLoaded", function() {
     window.addEventListener('scroll', onScroll);
     onScroll();
 });
+
+//xaver stinkt
