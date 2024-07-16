@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const typingText = document.getElementById('typing-text');
     const text = "Hi, I'm Zayneed";
     let index = 0;
-    let typingSpeed = 2000 / text.length;
+    let typingSpeed = 3500 / text.length;
     let deletingSpeed = 1000 / text.length;
     const blinkingCursor = document.querySelector('.typewriter::after');
 
@@ -75,3 +75,20 @@ document.addEventListener("DOMContentLoaded", function() {
     window.addEventListener('scroll', onScroll);
     onScroll();
 });
+
+
+
+
+    function copyEmail() {
+        const emailText = document.getElementById("email").innerText;
+        navigator.clipboard.writeText(emailText).then(() => {
+            const notification = document.getElementById("notification");
+            notification.style.display = "block";
+            setTimeout(() => {
+                notification.style.display = "none";
+            }, 2000);
+        }).catch(err => {
+            console.error('Fehler beim Kopieren der E-Mail-Adresse: ', err);
+        });
+    }
+
