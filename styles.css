@@ -79,12 +79,20 @@ body {
     -webkit-text-fill-color: transparent;
 }
 
-.blinking-cursor {
-    font-weight: bold;
-    font-size: 4rem;
-    color: white;
-    animation: blink 0.7s step-end infinite;
-}
+.typewriter {
+    --caret: currentcolor;
+  }
+  
+  .typewriter::before {
+    content: "";
+    animation: typing 13.5s infinite;
+  }
+  
+  .typewriter::after {
+    content: "";
+    border-right: 1px solid var(--caret);
+    animation: blink 0.5s linear infinite;
+  }
 
 @keyframes blink {
     from, to { border-color: transparent }
@@ -148,3 +156,7 @@ body {
 .project.visible {
     opacity: 1;
 }
+
+
+
+
