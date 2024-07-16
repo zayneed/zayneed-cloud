@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function () {
     let index = 0;
     let typingSpeed = 2000 / text.length;
     let deletingSpeed = 1000 / text.length;
-    const blinkingCursor = document.querySelector('.blinking-cursor');
+    const blinkingCursor = document.querySelector('.typewriter::after');
 
     function type() {
         if (index < text.length) {
@@ -53,13 +53,6 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
-
-
-
-
-
-
-
 document.addEventListener("DOMContentLoaded", function() {
     const aboutMeSection = document.getElementById('about-me');
 
@@ -82,6 +75,3 @@ document.addEventListener("DOMContentLoaded", function() {
     window.addEventListener('scroll', onScroll);
     onScroll();
 });
-
-
-

@@ -90,14 +90,15 @@ body {
   
   .typewriter::after {
     content: "";
-    border-right: 1px solid var(--caret);
+    border-right: 1px solid var(--caret, white);
     animation: blink 0.5s linear infinite;
-  }
+}
 
 @keyframes blink {
-    from, to { border-color: transparent }
+    0%, 100% { border-color: transparent; }
     50% { border-color: white; }
 }
+
 
 .projects {
     display: flex;
