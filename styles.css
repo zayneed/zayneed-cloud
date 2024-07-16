@@ -120,7 +120,7 @@ body {
     box-shadow: 0 0 20px 5px rgba(185, 164, 80, 1); /* More intense glowing edge on hover */
 }
 
-button {
+.button {
     margin: 12px;
     height: 50px;
     width: 120px;
@@ -138,7 +138,7 @@ button {
     transition: 500ms;
 }
 
-button:hover {
+.button:hover {
     box-shadow: -5px -5px 15px #444, 5px 5px 15px #222, inset 5px 5px 10px #222,
       inset -5px -5px 10px #444;
     color: #d6d6d6;
