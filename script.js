@@ -92,3 +92,19 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     }
 
+
+
+
+
+
+    function setColumnPercentage(columnId, percentage) {
+        var column = document.getElementById(columnId);
+        column.style.height = percentage + '%';
+    }
+    
+    setColumnPercentage('column1', 30);
+    setColumnPercentage('column2', 25);
+    setColumnPercentage('column3', 45);
+    setColumnPercentage('column4', 70);
+    setColumnPercentage('column5', 110);
+    
