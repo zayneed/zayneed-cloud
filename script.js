@@ -102,9 +102,56 @@ document.addEventListener("DOMContentLoaded", function() {
         column.style.height = percentage + '%';
     }
     
-    setColumnPercentage('column1', 30);
-    setColumnPercentage('column2', 25);
-    setColumnPercentage('column3', 45);
+    setColumnPercentage('column1', 60);
+    setColumnPercentage('column2', 35);
+    setColumnPercentage('column3', 55);
     setColumnPercentage('column4', 70);
     setColumnPercentage('column5', 110);
+    
+
+
+
+
+
+
+
+
+
+
+    document.addEventListener('DOMContentLoaded', () => {
+        const menuLinks = document.querySelectorAll('.menu a');
+    
+        menuLinks.forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href').substring(1);
+                const targetSection = document.getElementById(targetId);
+    
+                window.scrollTo({
+                    top: targetSection.offsetTop - document.querySelector('.menu').offsetHeight,
+                    behavior: 'smooth'
+                });
+            });
+        });
+    });
+
+    
+
+
+
+    document.addEventListener("DOMContentLoaded", function() {
+        const animatedContainer = document.getElementById('animated-container');
+    
+        function onScroll() {
+            const containerPosition = animatedContainer.getBoundingClientRect().top;
+            const screenPosition = window.innerHeight;
+    
+            if (containerPosition < screenPosition) {
+                animatedContainer.classList.add('animate');
+                window.removeEventListener('scroll', onScroll);
+            }
+        }
+    
+        window.addEventListener('scroll', onScroll);
+    });
     

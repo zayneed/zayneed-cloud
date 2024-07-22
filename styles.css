@@ -240,6 +240,69 @@ footer p {
 
 
 
+
+.menu {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0); /* Transparenter Hintergrund */
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    z-index: 1000;
+
+}
+
+.menu a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #c4bdbd;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.menu a:hover {
+    color: #2398EC;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+#animated-container {
+    opacity: 0; /* Anfangs unsichtbar */
+    transform: translateX(-100%); /* Anfangs nach links verschoben */
+    transition: all 2s ease-in-out; /* Glatte Animation */
+}
+
+#animated-container.animate {
+    opacity: 1; /* Sichtbar */
+    transform: translateX(0); /* In die ursprüngliche Position verschoben */
+}
+
+/* Deine bestehenden Styles für container, columns und column bleiben unverändert */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .Btn {
     border: none;
     border-radius: 50%;
