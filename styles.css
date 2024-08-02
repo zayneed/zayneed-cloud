@@ -265,17 +265,6 @@ footer p {
     color: #2398EC;
 }
 
-
-
-
-
-
-
-
-
-
-
-
 #animated-container {
     opacity: 0; /* Anfangs unsichtbar */
     transform: translateX(-100%); /* Anfangs nach links verschoben */
@@ -289,25 +278,12 @@ footer p {
 
 /* Deine bestehenden Styles für container, columns und column bleiben unverändert */
 
-
-
-
-
 .iframe-container {
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh; /* Optional: Full height of the viewport */
 }
-
-
-
-
-
-
-
-
-
 
 .Btn {
     border: none;
@@ -322,37 +298,119 @@ footer p {
     position: relative;
     background-color: rgb(31, 31, 31);
     overflow: hidden;
-  }
-  
-  .svgIcon {
+}
+
+.svgIcon {
     transition-duration: .3s;
-  }
-  
-  .svgIcon path {
+}
+
+.svgIcon path {
     fill: white;
-  }
-  
-  .text {
+}
+
+.text {
     position: absolute;
     color: rgb(255, 255, 255);
     width: 120px;
     font-weight: 600;
     opacity: 0;
     transition-duration: .4s;
-  }
-  
-  .Btn:hover {
+}
+
+.Btn:hover {
     width: 110px;
     transition-duration: .4s;
     border-radius: 30px;
-  }
-  
-  .Btn:hover .text {
+}
+
+.Btn:hover .text {
     opacity: 1;
     transition-duration: .4s;
-  }
-  
-  .Btn:hover .svgIcon {
+}
+
+.Btn:hover .svgIcon {
     opacity: 0;
     transition-duration: .3s;
-  }
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    .about-me-text {
+        font-size: 1.5em; /* Smaller font size for mobile */
+    }
+
+    .highlight {
+        font-size: 1em; /* Adjust highlight text size */
+    }
+
+    .container {
+        height: auto; /* Adjust height for smaller screens */
+        padding: 20px; /* Add padding for better spacing */
+    }
+
+    .animated-text {
+        font-size: 2rem; /* Smaller font size for mobile */
+        margin-bottom: 50px; /* Adjust bottom margin */
+    }
+
+    .project {
+        font-size: 1rem; /* Smaller font size for mobile */
+        margin: 10px; /* Reduce margins */
+        padding: 15px; /* Reduce padding */
+        min-width: 150px; /* Adjust minimum width */
+    }
+
+    .menu a {
+        font-size: 16px; /* Smaller font size for mobile */
+        margin: 0 10px; /* Adjust margin */
+    }
+
+    .columns {
+        flex-direction: column; /* Stack columns vertically on mobile */
+        align-items: center; /* Center align columns */
+    }
+
+    .column {
+        width: 100px; /* Adjust width for mobile */
+        height: 150px; /* Adjust height for mobile */
+    }
+
+    .logo {
+        width: 25px; /* Adjust logo size for mobile */
+    }
+}
+
+@media (max-width: 480px) {
+    .about-me-text {
+        font-size: 1.2em; /* Further reduce font size for very small screens */
+    }
+
+    .highlight {
+        font-size: 0.9em; /* Further adjust highlight text size */
+    }
+
+    .animated-text {
+        font-size: 1.5rem; /* Further reduce font size for very small screens */
+    }
+
+    .project {
+        font-size: 0.9rem; /* Further reduce font size */
+        margin: 5px; /* Further reduce margins */
+        padding: 10px; /* Further reduce padding */
+        min-width: 120px; /* Further adjust minimum width */
+    }
+
+    .menu a {
+        font-size: 14px; /* Further reduce font size */
+        margin: 0 5px; /* Further adjust margin */
+    }
+
+    .column {
+        width: 80px; /* Further adjust width */
+        height: 120px; /* Further adjust height */
+    }
+
+    .logo {
+        width: 20px; /* Further adjust logo size */
+    }
+}
