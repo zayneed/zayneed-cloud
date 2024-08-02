@@ -4,7 +4,7 @@ body {
     margin: 0;
     font-family: Arial, sans-serif;
     color: white;
-    overflow-x: hidden; /* Verhindert horizontales Scrollen auf größeren Bildschirmen */
+    overflow-x: hidden; /* Verhindert horizontales Scrollen */
 }
 
 #about-me {
@@ -102,21 +102,22 @@ body {
 
 .projects {
     display: flex;
+    flex-wrap: wrap; /* Zeilenumbruch für mobile Ansicht */
     justify-content: center;
-    align-items: center;
-    overflow-x: auto; /* Scrollbar auf mobilen Geräten */
+    align-items: flex-start;
     width: 100%;
     padding: 20px;
+    box-sizing: border-box;
 }
 
 .project {
     background-color: #181f38;
     color: #b9a450;
     font-size: 1.2rem;
-    margin: 0 10px;
+    margin: 10px;
     padding: 20px;
     min-width: 200px;
-    flex: 0 0 auto;
+    flex: 1 1 auto;
     border-radius: 10px;
     position: relative;
     border: 1px solid transparent;
@@ -184,10 +185,6 @@ footer p {
     padding: 10px 20px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
-}
-
-.container {
-    text-align: center;
 }
 
 .columns {
@@ -272,6 +269,7 @@ footer p {
     min-height: 100vh;
 }
 
+/* Buttons */
 .Btn {
     border: none;
     border-radius: 50%;
@@ -323,101 +321,45 @@ footer p {
 /* Mobile Styles */
 @media (max-width: 768px) {
     #about-me {
-        text-align: center; /* Center text */
+        padding: 15px;
     }
-
+    
     .about-me-text {
-        font-size: 1.5em;
-        text-align: center; /* Center text */
-    }
-
-    .highlight {
-        font-size: 1em;
-    }
-
-    .container {
-        height: auto;
-        padding: 20px;
-    }
-
-    .animated-text {
-        font-size: 2rem;
-        margin-bottom: 50px;
+        font-size: 1.8em; /* Kleinere Schriftgröße für mobile Ansicht */
     }
 
     .projects {
-        flex-direction: row; /* Arrange projects in a row */
-        overflow-x: auto; /* Enable horizontal scrolling */
-        padding: 10px;
+        flex-direction: column; /* Projekte untereinander auf mobilen Geräten */
     }
 
     .project {
-        font-size: 1rem;
-        margin: 5px;
-        padding: 15px;
-        min-width: 150px;
-    }
-
-    .menu a {
-        font-size: 16px;
-        margin: 0 10px;
+        width: 100%; /* Projekte auf 100% Breite setzen */
+        margin: 10px 0; /* Vertikaler Abstand */
     }
 
     .columns {
-        flex-direction: column;
+        flex-direction: column; /* Spalten untereinander auf mobilen Geräten */
         align-items: center;
     }
 
     .column {
-        width: 100px;
-        height: 150px;
-    }
-
-    .logo {
-        width: 25px;
-    }
-}
-
-@media (max-width: 480px) {
-    #about-me {
-        text-align: center; /* Ensure text is centered */
-    }
-
-    .about-me-text {
-        font-size: 1.2em;
+        width: 80%; /* Spaltenbreite auf mobilen Geräten */
+        margin: 10px 0; /* Vertikaler Abstand */
     }
 
     .highlight {
-        font-size: 0.9em;
+        font-size: 1.2em; /* Kleinere Schriftgröße für mobile Ansicht */
     }
 
-    .animated-text {
-        font-size: 1.5rem;
-    }
-
-    .projects {
-        padding: 5px;
-    }
-
-    .project {
-        font-size: 0.9rem;
-        margin: 5px;
-        padding: 10px;
-        min-width: 120px;
+    #animated-container {
+        text-align: center; /* Textausrichtung für mobile Ansicht */
     }
 
     .menu a {
-        font-size: 14px;
-        margin: 0 5px;
+        font-size: 16px; /* Kleinere Schriftgröße für mobile Ansicht */
     }
 
-    .column {
-        width: 80px;
-        height: 120px;
-    }
-
-    .logo {
-        width: 20px;
+    footer p {
+        font-size: 12px; /* Kleinere Schriftgröße für mobile Ansicht */
     }
 }
-
