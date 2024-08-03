@@ -332,7 +332,7 @@ footer p {
     #about-me {
         opacity: 1;
         transform: none;
-        margin-top: 30px; /* Erhöhter Abstand auf mobilen Geräten */
+        margin-top: 30px; /* Erhöhter Abstand nach oben */
     }
 
     .about-me-text {
@@ -342,7 +342,8 @@ footer p {
     .projects {
         flex-direction: column;
         align-items: center;
-        margin: 60px 0; /* Erhöhter Abstand auf mobilen Geräten */
+        margin-top: 60px; /* Erhöhter Abstand nach oben, um Überlappung zu vermeiden */
+        margin-bottom: 60px; /* Erhöhter Abstand nach unten, um Überlappung zu vermeiden */
     }
 
     .columns {
@@ -379,3 +380,4 @@ footer p {
         line-height: 1.2;
     }
 }
+
