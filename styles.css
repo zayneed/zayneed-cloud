@@ -15,7 +15,7 @@ body {
     border-radius: 8px;
     background-color: transparent;
     text-align: center;
-    margin-top: 90px; /* Erhöhter Abstand nach oben */
+    margin-top: 96px; /* Erhöhter Abstand nach oben */
     z-index: 1; /* Sicherstellen, dass es vor anderen Elementen angezeigt wird */
 }
 
@@ -338,7 +338,7 @@ footer p {
     .projects {
         flex-direction: column;
         align-items: center;
-        margin: 30px 0; /* Erhöhter Abstand auf mobilen Geräten */
+        margin: 90px 0; /* Erhöhter Abstand auf mobilen Geräten */
     }
 
     .columns {
