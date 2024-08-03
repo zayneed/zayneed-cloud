@@ -16,6 +16,7 @@ body {
     background-color: transparent;
     text-align: center;
     margin-top: 20px; /* Sicherstellen, dass genügend Abstand vorhanden ist */
+    z-index: 1; /* Sicherstellen, dass es vor anderen Elementen angezeigt wird */
 }
 
 #about-me.visible {
@@ -65,6 +66,7 @@ body {
     justify-content: center;
     height: 100vh;
     text-align: center;
+    z-index: 1; /* Sicherstellen, dass es vor anderen Elementen angezeigt wird */
 }
 
 .animated-text {
@@ -111,6 +113,8 @@ body {
     width: 100%;
     padding: 20px;
     box-sizing: border-box;
+    margin-top: 20px; /* Abstand zu anderen Abschnitten */
+    z-index: 1; /* Sicherstellen, dass es vor anderen Elementen angezeigt wird */
 }
 
 .project {
@@ -194,6 +198,7 @@ footer p {
     display: flex;
     justify-content: space-around;
     margin-top: 20px;
+    z-index: 1; /* Sicherstellen, dass es vor anderen Elementen angezeigt wird */
 }
 
 .column {
@@ -258,6 +263,7 @@ footer p {
     opacity: 0;
     transform: translateX(-100%);
     transition: all 2s ease-in-out;
+    z-index: 1; /* Sicherstellen, dass es vor anderen Elementen angezeigt wird */
 }
 
 #animated-container.animate {
@@ -324,25 +330,23 @@ footer p {
 /* Mobile Styles */
 @media (max-width: 768px) {
     #about-me {
-        padding: 15px;
-        margin-top: 10px; /* Reduziere Abstand oben auf mobilen Geräten */
-        opacity: 1; /* Sichtbarkeit für mobile Ansicht */
-        transform: none; /* Entferne Transformation für mobile Ansicht */
+        opacity: 1;
+        transform: none;
     }
 
     .projects {
-        flex-direction: column; /* Projekte untereinander auf mobilen Geräten */
-        align-items: center; /* Zentriere Projekte */
+        flex-direction: column;
+        align-items: center;
         margin: 10px 0;
     }
 
     .columns {
-        flex-direction: row; /* Prozentbalken nebeneinander auf mobilen Geräten */
-        justify-content: space-between; /* Abstand zwischen Prozentbalken */
+        flex-direction: row;
+        justify-content: space-between;
     }
 
     .column {
-        width: calc(100% / 3 - 10px); /* Drei Spalten auf mobilen Geräten mit Abstand */
+        width: calc(100% / 3 - 10px);
         margin: 5px;
     }
 
