@@ -79,6 +79,8 @@ body {
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
+    max-width: 100%; /* Begrenzung der maximalen Breite */
+    overflow-wrap: break-word; /* Zeilenumbruch bei Bedarf */
 }
 
 .typewriter {
@@ -358,5 +360,12 @@ footer p {
 
     footer p {
         font-size: 12px; /* Kleinere Schriftgröße für mobile Ansicht */
+    }
+
+    .animated-text {
+        font-size: 3rem; /* Kleinere Schriftgröße für mobile Ansicht */
+        margin-top: 20px; /* Abstand oben für mobile Ansicht */
+        white-space: normal; /* Textumbruch ermöglichen */
+        line-height: 1.2; /* Zeilenhöhe anpassen */
     }
 }
