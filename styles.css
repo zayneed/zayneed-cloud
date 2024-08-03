@@ -15,7 +15,7 @@ body {
     border-radius: 8px;
     background-color: transparent;
     text-align: center;
-    margin-top: 20px; /* Sicherstellen, dass genügend Abstand vorhanden ist */
+    margin-top: 40px; /* Abstand zu anderen Abschnitten */
     z-index: 1; /* Sicherstellen, dass es vor anderen Elementen angezeigt wird */
 }
 
@@ -113,7 +113,7 @@ body {
     width: 100%;
     padding: 20px;
     box-sizing: border-box;
-    margin-top: 20px; /* Abstand zu anderen Abschnitten */
+    margin-top: 40px; /* Abstand zu anderen Abschnitten */
     z-index: 1; /* Sicherstellen, dass es vor anderen Elementen angezeigt wird */
 }
 
@@ -197,7 +197,7 @@ footer p {
 .columns {
     display: flex;
     justify-content: space-around;
-    margin-top: 20px;
+    margin-top: 40px; /* Abstand zu anderen Abschnitten */
     z-index: 1; /* Sicherstellen, dass es vor anderen Elementen angezeigt wird */
 }
 
@@ -332,17 +332,19 @@ footer p {
     #about-me {
         opacity: 1;
         transform: none;
+        margin-top: 30px; /* Erhöhter Abstand auf mobilen Geräten */
     }
 
     .projects {
         flex-direction: column;
         align-items: center;
-        margin: 10px 0;
+        margin: 20px 0; /* Erhöhter Abstand auf mobilen Geräten */
     }
 
     .columns {
         flex-direction: row;
         justify-content: space-between;
+        margin-top: 30px; /* Erhöhter Abstand auf mobilen Geräten */
     }
 
     .column {
