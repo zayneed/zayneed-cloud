@@ -15,7 +15,7 @@ body {
     border-radius: 8px;
     background-color: transparent;
     text-align: center;
-    margin-top: 40px; /* Abstand zu anderen Abschnitten */
+    margin-top: 60px; /* Erhöhter Abstand nach oben */
     z-index: 1; /* Sicherstellen, dass es vor anderen Elementen angezeigt wird */
 }
 
@@ -113,8 +113,8 @@ body {
     width: 100%;
     padding: 20px;
     box-sizing: border-box;
-    margin-top: 40px; /* Abstand zu anderen Abschnitten */
-    z-index: 1; /* Sicherstellen, dass es vor anderen Elementen angezeigt wird */
+    margin-top: 60px; /* Erhöhter Abstand nach oben */
+    z-index: 0; /* Sicherstellen, dass es unter anderen Elementen angezeigt wird */
 }
 
 .project {
@@ -197,8 +197,8 @@ footer p {
 .columns {
     display: flex;
     justify-content: space-around;
-    margin-top: 40px; /* Abstand zu anderen Abschnitten */
-    z-index: 1; /* Sicherstellen, dass es vor anderen Elementen angezeigt wird */
+    margin-top: 60px; /* Erhöhter Abstand nach oben */
+    z-index: 0; /* Sicherstellen, dass es unter anderen Elementen angezeigt wird */
 }
 
 .column {
@@ -338,7 +338,7 @@ footer p {
     .projects {
         flex-direction: column;
         align-items: center;
-        margin: 20px 0; /* Erhöhter Abstand auf mobilen Geräten */
+        margin: 30px 0; /* Erhöhter Abstand auf mobilen Geräten */
     }
 
     .columns {
