@@ -332,7 +332,8 @@ footer p {
     #about-me {
         opacity: 1;
         transform: none;
-        margin-top: 30px; /* Erhöhter Abstand nach oben */
+        margin-top: 50px; /* Erhöhter Abstand nach oben */
+        margin-bottom: 50px; /* Erhöhter Abstand nach unten */
     }
 
     .about-me-text {
@@ -342,14 +343,15 @@ footer p {
     .projects {
         flex-direction: column;
         align-items: center;
-        margin-top: 60px; /* Erhöhter Abstand nach oben, um Überlappung zu vermeiden */
-        margin-bottom: 60px; /* Erhöhter Abstand nach unten, um Überlappung zu vermeiden */
+        margin-top: 80px; /* Erhöhter Abstand nach oben, um Überlappung zu vermeiden */
+        margin-bottom: 80px; /* Erhöhter Abstand nach unten, um Überlappung zu vermeiden */
+        padding: 0 20px; /* Padding hinzufügen, um Platz zu schaffen */
     }
 
     .columns {
         flex-direction: row;
         justify-content: space-between;
-        margin-top: 30px; /* Erhöhter Abstand auf mobilen Geräten */
+        margin-top: 40px; /* Erhöhter Abstand oben */
     }
 
     .column {
@@ -380,4 +382,3 @@ footer p {
         line-height: 1.2;
     }
 }
-
