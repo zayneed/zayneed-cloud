@@ -12,6 +12,13 @@ p {
 }
 
 
+.survi {
+    display: flex;
+    justify-content: center;  /* Horizontale Zentrierung */
+    align-items: center;      /* Vertikale Zentrierung */
+    height: 100vh;            /* Höhe des Containers auf die volle Ansichtshöhe setzen */
+  }
+
 #about-me {
     opacity: 0;
     transform: translateY(20px);
