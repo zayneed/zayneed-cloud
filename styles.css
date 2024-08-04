@@ -7,6 +7,11 @@ body {
     overflow-x: hidden; /* Verhindert horizontales Scrollen */
 }
 
+p {
+    text-align: center;
+}
+
+
 #about-me {
     opacity: 0;
     transform: translateY(20px);
@@ -389,3 +394,15 @@ footer p {
         line-height: 1.2;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
