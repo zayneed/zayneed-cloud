@@ -131,7 +131,7 @@ p {
 
 .project {
     background-color: #181f38;
-    color: #b9a450;
+    color: #4c6abd;
     font-size: 1.2rem;
     margin: 10px;
     padding: 20px;
@@ -140,13 +140,13 @@ p {
     border-radius: 10px;
     position: relative;
     border: 1px solid transparent;
-    box-shadow: 0 0 10px 2px rgba(185, 164, 80, 0.8);
+    box-shadow: 0 0 10px 2px #4c6abd;
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
 .project:hover {
     transform: scale(1.1);
-    box-shadow: 0 0 20px 5px rgba(185, 164, 80, 1);
+    box-shadow: 0 0 20px 5px #4b6ece;
 }
 
 .button {
