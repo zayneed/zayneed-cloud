@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MP3-Player - Xava Freestyle</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1a1a2e;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .player-container {
+            background-color: #0f3460;
+            border-radius: 15px;
+            padding: 20px;
+            width: 300px;
+            text-align: center;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+        }
+        .player-container h2 {
+            margin: 0;
+            font-size: 1.5em;
+            color: #e94560;
+        }
+        .audio-player {
+            width: 100%;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="player-container">
+    <h2>Xava Freestyle</h2>
+    <audio class="audio-player" controls controlsList="nodownload">
+        <source src="xava freestyle.mp3" type="audio/mpeg">
+        Dein Browser unterstützt den Audio-Player nicht.
+    </audio>
+</div>
+
+</body>
+</html>
